@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
 Widget japanesegardenCard() => Card(
-  margin: EdgeInsets.all(20),
+  margin: const EdgeInsets.all(20),
   clipBehavior: Clip.antiAlias,
   shape: RoundedRectangleBorder(
     borderRadius: BorderRadius.circular(20),
@@ -12,12 +12,12 @@ Widget japanesegardenCard() => Card(
       Stack(
         children: [
           Ink.image(
-            image: AssetImage('assets/japanesegarden.jpg'),
+            image: const AssetImage('assets/japanesegarden.jpg'),
             colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.2), BlendMode.darken),
             height: 150,
             fit: BoxFit.cover,
           ),
-          Positioned(
+          const Positioned(
             bottom: 16,
             right: 16,
             left: 16,
@@ -33,8 +33,8 @@ Widget japanesegardenCard() => Card(
         ],
       ),
       Padding(
-        padding: EdgeInsets.all(16).copyWith(bottom: 0),
-        child: Text(
+        padding: const EdgeInsets.all(16).copyWith(bottom: 0),
+        child: const Text(
           '3853 N St Mary\'s St, San Antonio, TX 78212\nHours: 7AM - 5PM\n4.8 ✰✰✰✰✰ (12K Reviews)',
           style: TextStyle(fontSize: 16),
         ),
@@ -44,17 +44,17 @@ Widget japanesegardenCard() => Card(
         children: [
           TextButton(
             style: TextButton.styleFrom(
-              primary: Colors.blue.shade800, // foreground
+              foregroundColor: Colors.blue.shade800, // foreground
             ),
             onPressed: () { },
-            child: Text('Details'),
+            child: const Text('Details'),
           ),
           TextButton(
             style: TextButton.styleFrom(
-              primary: Colors.blue.shade800, // foreground
+              foregroundColor: Colors.blue.shade800, // foreground
             ),
             onPressed: () { },
-            child: Text('Directions'),
+            child: const Text('Directions'),
           )
         ],
       )
@@ -63,6 +63,8 @@ Widget japanesegardenCard() => Card(
 );
 
 class EntertainmentPage extends StatelessWidget {
+  const EntertainmentPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -82,31 +84,24 @@ class EntertainmentPage extends StatelessWidget {
         centerTitle: true,
       ),
       body: SingleChildScrollView(
-        child: Container(
-          child: Column(
-            children: [
-              //CarouselWithDotsPage(imgList),
-              Padding(
-                padding: EdgeInsets.only(top: 15),
-                child: Container(
-                  alignment: Alignment.center,
-                  child: Text(
-                    "Entertainment Locations",
-                    style: TextStyle(
-                      color: Colors.grey.shade700,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20,
-                    ),
+        child: Column(
+          children: [
+            //CarouselWithDotsPage(imgList),
+            Padding(
+              padding: const EdgeInsets.only(top: 15),
+              child: Container(
+                alignment: Alignment.center,
+                child: Text(
+                  "Entertainment Locations",
+                  style: TextStyle(
+                    color: Colors.grey.shade700,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
                   ),
                 ),
               ),
-              japanesegardenCard(),
-              japanesegardenCard(),
-              japanesegardenCard(),
-              japanesegardenCard(),
-              japanesegardenCard(),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
       bottomNavigationBar: GNav(
@@ -114,7 +109,7 @@ class EntertainmentPage extends StatelessWidget {
         color: Colors.grey,
         activeColor: Colors.blue.shade800,
         gap: 8,
-        tabs: [
+        tabs: const [
           GButton(
             icon: Icons.home,
             text: "Home Page",

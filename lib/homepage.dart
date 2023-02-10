@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import '/models/category_model.dart';
-import 'entertainmentPage.dart';
+import '/models/trending_slider_model.dart';
+import 'entertainment_category_page.dart';
+import 'food_category_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -13,7 +14,7 @@ class HomePage extends StatefulWidget {
 
 
 Widget foodButtonWdiget(BuildContext context) => Card(
-  margin: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+  margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
   clipBehavior: Clip.antiAlias,
   shape: RoundedRectangleBorder(
     borderRadius: BorderRadius.circular(24)
@@ -25,7 +26,12 @@ Widget foodButtonWdiget(BuildContext context) => Card(
         image: AssetImage('assets/button_0.png'),
         colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.2), BlendMode.darken),
         child: InkWell (
-          onTap: () {},
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => food_category_page()),
+            );
+          },
         ),
         height: 220,
         fit: BoxFit.cover,
@@ -35,7 +41,7 @@ Widget foodButtonWdiget(BuildContext context) => Card(
         style: TextStyle(
           fontWeight: FontWeight.bold,
           color: Colors.white,
-          fontSize: 55,
+          fontSize: 45,
           shadows: [
             Shadow(
               color: Colors.black,
@@ -66,7 +72,7 @@ Widget entertainmentButtonWidget(BuildContext context) => Card(
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => EntertainmentPage()),
+              MaterialPageRoute(builder: (context) => entertainment_category_page()),
             );
           },
         ),
@@ -78,7 +84,7 @@ Widget entertainmentButtonWidget(BuildContext context) => Card(
         style: TextStyle(
           fontWeight: FontWeight.bold,
           color: Colors.white,
-          fontSize: 50,
+          fontSize: 45,
           shadows: [
             Shadow(
               color: Colors.black,
@@ -116,7 +122,7 @@ Widget studyButtonWidget(BuildContext context) => Card(
         style: TextStyle(
           fontWeight: FontWeight.bold,
           color: Colors.white,
-          fontSize: 50,
+          fontSize: 45,
           shadows: [
             Shadow(
               color: Colors.black,
@@ -153,7 +159,7 @@ Widget otherButtonWidget(BuildContext context) => Card(
         style: TextStyle(
           fontWeight: FontWeight.bold,
           color: Colors.white,
-          fontSize: 50,
+          fontSize: 45,
           shadows: [
             Shadow(
               color: Colors.black,
