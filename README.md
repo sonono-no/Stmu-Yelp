@@ -8,8 +8,7 @@ Location Categories                       |  Home Screen     |  Location Details
 ![38582c3a05e73442da376dbb2c451bcc](https://user-images.githubusercontent.com/48145892/218061258-795f85d7-5a2d-4ecd-8765-1298f143961f.gif)  | ![a3a00f3c4732528450f3f283cb6c4e58](https://user-images.githubusercontent.com/48145892/218060691-1d48f9c6-810d-4330-a4ea-b5da164e0428.gif)  |  ![97780ec5948255d431b9029592f0d944](https://user-images.githubusercontent.com/48145892/218060808-36a0ac9e-92d1-453e-8275-bf984267866b.gif)
   
 
-Collaboratively built & designed by the St. Mary's computer science club Infinite Loops 2022 - 2023 App Team [Nadia Morrow](https://github.com/Nadia-Morrow), [Kevin Huy Trinh](https://github.com/KevinTrinh1227), [Samson Pullattu](https://github.com/sampul25), [Manuel A. Ubrina](https://github.com/manny2242), [Juan Gutierrez](https://github.com/Guti2020xx), and [Daguilar](https://github.com/Daguilar2021).
-
+Collaboratively built & designed by the 2022 - 2023 Infinite Loops App Team. 
 ## Getting Started
 
 ### 📋 Clone the Repository

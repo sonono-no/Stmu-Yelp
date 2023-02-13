@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
-import 'package:carousel_slider/carousel_slider.dart';
-import '/models/trending_slider_model.dart';
 import 'models/food_locations_list.dart';
 
 
@@ -39,10 +37,10 @@ class LocationPage extends StatelessWidget {
             children: [
               //CarouselWithDotsPage(imgList),
               Padding(
-                padding: EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 child: Text(
                   location.name,
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.black,
                     fontWeight: FontWeight.bold,
                     fontSize: 25,

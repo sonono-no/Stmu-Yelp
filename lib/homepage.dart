@@ -23,20 +23,20 @@ Widget foodButtonWdiget(BuildContext context) => Card(
     alignment: Alignment.center,
     children: [
       Ink.image(
-        image: AssetImage('assets/button_0.png'),
+        image: const AssetImage('assets/button_0.png'),
         colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.2), BlendMode.darken),
+        height: 220,
+        fit: BoxFit.cover,
         child: InkWell (
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => food_category_page()),
+              MaterialPageRoute(builder: (context) => const food_category_page()),
             );
           },
         ),
-        height: 220,
-        fit: BoxFit.cover,
       ),
-      Text(
+      const Text(
         "Food",
         style: TextStyle(
           fontWeight: FontWeight.bold,
