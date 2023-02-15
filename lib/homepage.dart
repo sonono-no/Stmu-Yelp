@@ -3,7 +3,9 @@ import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import '/models/trending_slider_model.dart';
 import 'entertainment_category_page.dart';
+import 'study_area_category_page.dart';
 import 'food_category_page.dart';
+import 'other_category_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -31,7 +33,7 @@ Widget foodButtonWdiget(BuildContext context) => Card(
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => const food_category_page()),
+              MaterialPageRoute(builder: (context) => food_category_page()),
             );
           },
         ),
@@ -112,7 +114,12 @@ Widget studyButtonWidget(BuildContext context) => Card(
         image: AssetImage('assets/button_2.png'),
         colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.2), BlendMode.darken),
         child: InkWell (
-          onTap: () {},
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => study_area_category_page()),
+            );
+          },
         ),
         height: 220,
         fit: BoxFit.cover,
@@ -149,7 +156,12 @@ Widget otherButtonWidget(BuildContext context) => Card(
         image: AssetImage('assets/button_3.png'),
         colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.2), BlendMode.darken),
         child: InkWell (
-          onTap: () {},
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => other_category_page()),
+            );
+          },
         ),
         height: 220,
         fit: BoxFit.cover,

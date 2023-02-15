@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
-import 'models/entertainment_locations_list.dart';
-import 'entertainment_more_details.dart';
+import 'models/other_location_list.dart';
+import 'other_more_detials.dart';
 
 
-class entertainment_category_page extends StatelessWidget {
+class other_category_page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

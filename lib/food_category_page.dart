@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'models/food_locations_list.dart';
-import 'location_details.dart';
+import 'food_more_details.dart';
 
 class food_category_page extends StatelessWidget {
-  const food_category_page({super.key});
 
   @override
   Widget build(BuildContext context) {
